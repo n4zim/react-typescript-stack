@@ -7,18 +7,11 @@ FROM node:alpine
 RUN apk add --no-cache --update make gcc g++ libc-dev libpng-dev automake autoconf libtool nasm
 
 # App directory
-WORKDIR /usr/src/app
+WORKDIR /usr/app
 
 # Node dependencies
-COPY package*.json ./
-RUN yarn install --only=production
-
-# App files
-COPY . .
-
-# Webpack build 
-RUN yarn build
+RUN yarn install
 
 # Starting the app
 EXPOSE 80
-CMD [ "yarn", "serve" ]
+CMD [ "yarn", "start" ]

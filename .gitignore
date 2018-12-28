@@ -1,7 +1,7 @@
 coverage/
 dist/
 node_modules/
-sandbox/**/*.js
 web/
 package-lock.json
+yarn.lock
 *.log

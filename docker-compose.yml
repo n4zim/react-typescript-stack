@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  app:
+    build:
+      dockerfile: .docker/development.dockerfile
+      context: .
+    volumes:
+      - .:/usr/app
+      - /usr/app/node_modules
+    ports:
+      - "${WEB_PORT}:80"
+    restart: always

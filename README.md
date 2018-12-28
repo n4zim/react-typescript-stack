@@ -6,9 +6,7 @@
 
 ## Commands
 
-### Docker
-
-#### Run development (with hot reload)
+### Run development (with hot reload)
 ```bash
 docker-compose up -d
 ```
