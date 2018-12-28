@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  app:
+    image: n4zim/react-quick-start-stack:latest
+    build:
+      context: .
+      args:
+        - WEB_PORT=${WEB_PORT}
+    ports:
+      - "${WEB_PORT}:80"
+    restart: always

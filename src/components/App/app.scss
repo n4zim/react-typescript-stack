@@ -1,0 +1,11 @@
+$bg-color: #dedede;
+
+.app {
+  font-family: helvetica, arial, sans-serif;
+  background-color: $bg-color;
+
+  $distance: 20px;
+
+  margin: $distance;
+  padding: $distance;
+}
